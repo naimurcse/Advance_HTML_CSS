@@ -19,7 +19,20 @@ img {
     /* background-image:linear-gradient(45deg, #696df7, #56bdef); */
 
     background-image: repeating-linear-gradient(45deg, yellow 0px, yellow 40px, black 40px, black 80px);
+    position: relative;
 }
+
+.today::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000c4;
+    z-index: 0;
+}
+
 
 .today h3 {
     color: #000;
@@ -28,9 +41,11 @@ img {
     border-radius: 9px;
     padding: 10px;
     font-size: 20px;
-    border-left: 4px solid black;
-    border-right: 4px solid black;
+    border-left: 1px solid yellow;
+    border-right: 1px solid yellow;
     margin-bottom: 5px;
+    z-index: 2;
+    position: relative;
 }
 
 .today-bg {
@@ -39,18 +54,18 @@ img {
     border: 4px solid #ffffff;
     width: 100%;
     border-radius: 10px;
-    overflow: hidden;
+    display: flex;
+    z-index: 2;
+    position: relative;
 }
 
 .left-area {
     width: 50%;
-    float: left;
     padding: 20px;
 }
 
 .right-area {
     width: 50%;
-    float: left;
     padding: 20px;
 }
 
@@ -73,7 +88,7 @@ img {
 }
 
 .today ul li a:hover {
-    color: #04ffe8;
+    color: yellow;
 }
 
 /* Today End */
