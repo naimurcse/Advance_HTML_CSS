@@ -198,3 +198,70 @@ body {
 }
 
 /* Cricket Section End */
+
+
+/* Animation Start */
+
+/* Animation End */
+
+
+/* Ball Animation Start */
+.ball-animation {}
+
+.stage {
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(0deg, blue, skyblue);
+}
+
+.one-ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    animation: slidein 4s ease-in-out 2s infinite alternate;
+}
+
+@keyframes slidein {
+    0% {
+        left: 0;
+
+    }
+
+    100% {
+        left: 800px;
+    }
+}
+
+.second-ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    animation: bounce 4s ease-in-out 2s infinite alternate;
+}
+
+
+@keyframes bounce {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        /* left: 400px; */
+        left: 60%;
+        top: 150px;
+        background-color: orange;
+    }
+
+    100% {
+        left: 90%;
+        top: 0;
+    }
+}
+
+/* Ball Animation End */
