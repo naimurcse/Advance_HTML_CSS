@@ -160,3 +160,41 @@ body {
 }
 
 /* Transformer Section End */
+
+
+/* Cricket Section Start */
+.cricket {}
+
+.field {}
+
+.field:hover .bat {
+    transform: rotate(-60deg);
+    transform-origin: 20% 0%;
+}
+
+.field:hover .ball {
+    transform: translate(880px, -140px);
+}
+
+
+.bat {
+    transition: transform 0.4s ease-in-out;
+}
+
+.bat:hover {}
+
+.bat img {
+    width: 250px;
+}
+
+.ball {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    left: 316px;
+    transition: transform 0.6s ease-in-out 0.4s;
+}
+
+/* Cricket Section End */
