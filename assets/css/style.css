@@ -129,3 +129,34 @@ body {
     height: 200px;
     border: 1px solid red;
 }
+
+
+/* Transformer Section Start */
+.boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.transformer-box {
+    width: 200px;
+    height: 200px;
+}
+
+.outter-box {
+    border: 2px solid red;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.inner-box {
+    background: #56bdef;
+    padding: 15px;
+}
+
+.outline-box {
+    border: 2px solid red;
+    overflow: hidden;
+    padding: 15px;
+}
+
+/* Transformer Section End */
