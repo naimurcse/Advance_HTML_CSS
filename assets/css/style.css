@@ -269,3 +269,33 @@ body {
 
 /* Flex Section start */
 /* Flex Section End */
+
+/* Grid Section Start */
+.grid-section {}
+
+.grid {}
+
+.grid-parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
+}
+
+.grid-child {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    background: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.grid-parent-two {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+}
+
+/* Grid Section End */
