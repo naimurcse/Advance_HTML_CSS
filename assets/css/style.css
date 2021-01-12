@@ -116,6 +116,10 @@ body {
     background: red;
 } */
 
+li>ul>li {
+    margin-left: 20px;
+}
+
 .overflow {
     padding: 80px 0;
 }
@@ -299,3 +303,159 @@ body {
 }
 
 /* Grid Section End */
+
+/* Media Query Start */
+.media-query {}
+
+.media-query-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+}
+
+.food {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    width: 360px;
+}
+
+.food img {}
+
+.food p {}
+
+/* @media (max-width: 1200px) {
+
+    .container {
+        width: 900px;
+        margin: auto;
+    }
+
+
+    .food {
+        background: red;
+    }
+}
+
+@media (max-width: 980px) {
+    .food {
+        background: rgb(0, 255, 42);
+    }
+
+    .media-query-area {
+        flex-direction: column;
+
+    }
+} */
+
+/* Media Query End */
+
+/* Flex Section Start */
+.flex-2 {}
+
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+.flex-item {
+    padding: 50px;
+    border: 1px solid green;
+    flex-grow: 1;
+}
+
+.flex-item-1 {}
+
+.flex-item-2 {
+    flex-grow: 2;
+}
+
+.flex-item-3 {}
+
+.flex-item-4 {}
+
+.flex-item-5 {
+    order: 3;
+}
+
+.flex-item-6 {
+    order: 1;
+}
+
+.flex-item-7 {
+    order: 4;
+}
+
+.flex-item-8 {
+    order: 2;
+}
+
+.flex-parent-two {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.flex-item-9 {
+    width: 350px;
+}
+
+.flex-item-10 {
+    width: 350px;
+}
+
+.flex-item-11 {
+    width: 400px;
+}
+
+.flex-item-12 {
+    width: 350px;
+}
+
+.flex-parent-three {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item-13 {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.flex-item-14 {
+    width: 250px;
+    flex-shrink: 2;
+}
+
+.flex-item-15 {
+    width: 250px;
+    flex-shrink: 1;
+}
+
+.flex-item-16 {
+    width: 250px;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.col {
+    width: 200px;
+    background: green;
+    border: 1px solid red;
+    padding: 10px;
+    color: #fff;
+}
+
+.col one {}
+
+.col two {}
+
+.col three {}
+
+/* Flex Section End */
