@@ -332,21 +332,25 @@ li>ul>li {
     background: rebeccapurple;
     /* grid-row-start: 1; */
     /* grid-row-end: 3; */
-    grid-row: 1/3;
+    grid-row: 1/4;
 }
 
 .grid-container .item-no-2 {
     background: #6633AD;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    /* grid-row-start: 1; */
+    /* grid-row-end: 3; */
+    /* grid-row: 1/3; */
 }
 
 .grid-container .item-no-3 {
     background: #6633C1;
+    /* grid-area: 1/3/2/4; */
 }
 
 .grid-container .item-no-4 {
     background: #6633D5;
+    grid-column: 2/span 2;
+    grid-row: 2/span 2;
 }
 
 .grid-container .item-no-5 {
